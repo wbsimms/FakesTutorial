@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FakesTutorialLib.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:FakesTutorialLib.Fakes.ShimAddress">
+            <summary>Shim type of FakesTutorialLib.Address</summary>
+        </member>
+        <member name="M:FakesTutorialLib.Fakes.ShimAddress.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FakesTutorialLib.Fakes.ShimAddress.#ctor(FakesTutorialLib.Address)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:FakesTutorialLib.Fakes.ShimAddress.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FakesTutorialLib.Fakes.ShimAddress.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.ShimAddress.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.ShimAddress.Constructor">
+            <summary>Sets the shim of Address.Address()</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.ShimAddress.Line1Get">
+            <summary>Sets the shim of Address.get_Line1()</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.ShimAddress.Line1SetString">
+            <summary>Sets the shim of Address.set_Line1(String value)</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.ShimAddress.Line2Get">
+            <summary>Sets the shim of Address.get_Line2()</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.ShimAddress.Line2SetString">
+            <summary>Sets the shim of Address.set_Line2(String value)</summary>
+        </member>
+        <member name="T:FakesTutorialLib.Fakes.ShimAddress.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.ShimAddress.AllInstances.Line1Get">
+            <summary>Sets the shim of Address.get_Line1()</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.ShimAddress.AllInstances.Line1SetString">
+            <summary>Sets the shim of Address.set_Line1(String value)</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.ShimAddress.AllInstances.Line2Get">
+            <summary>Sets the shim of Address.get_Line2()</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.ShimAddress.AllInstances.Line2SetString">
+            <summary>Sets the shim of Address.set_Line2(String value)</summary>
+        </member>
+        <member name="T:FakesTutorialLib.Fakes.ShimPerson">
+            <summary>Shim type of FakesTutorialLib.Person</summary>
+        </member>
+        <member name="M:FakesTutorialLib.Fakes.ShimPerson.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FakesTutorialLib.Fakes.ShimPerson.#ctor(FakesTutorialLib.Person)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:FakesTutorialLib.Fakes.ShimPerson.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FakesTutorialLib.Fakes.ShimPerson.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.ShimPerson.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.ShimPerson.ConstructorInt32IAddressLookup">
+            <summary>Sets the shim of Person.Person(Int32 id, IAddressLookup addressLookup)</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.ShimPerson.HomeAddressGet">
+            <summary>Sets the shim of Person.get_HomeAddress()</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.ShimPerson.HomeAddressSetAddress">
+            <summary>Sets the shim of Person.set_HomeAddress(Address value)</summary>
+        </member>
+        <member name="T:FakesTutorialLib.Fakes.ShimPerson.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.ShimPerson.AllInstances.HomeAddressGet">
+            <summary>Sets the shim of Person.get_HomeAddress()</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.ShimPerson.AllInstances.HomeAddressSetAddress">
+            <summary>Sets the shim of Person.set_HomeAddress(Address value)</summary>
+        </member>
+        <member name="T:FakesTutorialLib.Fakes.StubAddress">
+            <summary>Stub type of FakesTutorialLib.Address</summary>
+        </member>
+        <member name="M:FakesTutorialLib.Fakes.StubAddress.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:FakesTutorialLib.Fakes.StubAddress.InitializeStub">
+            <summary>Initializes a new instance of type StubAddress</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.StubAddress.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.StubAddress.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.StubAddress.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:FakesTutorialLib.Fakes.StubIAddressLookup">
+            <summary>Stub type of FakesTutorialLib.IAddressLookup</summary>
+        </member>
+        <member name="M:FakesTutorialLib.Fakes.StubIAddressLookup.#ctor">
+            <summary>Initializes a new instance of type StubIAddressLookup</summary>
+        </member>
+        <member name="M:FakesTutorialLib.Fakes.StubIAddressLookup.ftl::FakesTutorialLib#IAddressLookup#GetAddress(System.Int32)">
+            <summary>Sets the stub of IAddressLookup.GetAddress(Int32 personId)</summary>
+        </member>
+        <member name="F:FakesTutorialLib.Fakes.StubIAddressLookup.GetAddressInt32">
+            <summary>Sets the stub of IAddressLookup.GetAddress(Int32 personId)</summary>
+        </member>
+        <member name="T:FakesTutorialLib.Fakes.StubPerson">
+            <summary>Stub type of FakesTutorialLib.Person</summary>
+        </member>
+        <member name="M:FakesTutorialLib.Fakes.StubPerson.#ctor(System.Int32,FakesTutorialLib.IAddressLookup)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:FakesTutorialLib.Fakes.StubPerson.InitializeStub">
+            <summary>Initializes a new instance of type StubPerson</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.StubPerson.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.StubPerson.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.StubPerson.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>
