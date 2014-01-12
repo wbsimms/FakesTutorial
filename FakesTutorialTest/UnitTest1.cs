@@ -22,7 +22,8 @@ namespace FakesTutorialTest
             {
                 ShimAddress.AllInstances.Line1Get = address => { return "shimmed"; };
                 Person p = new Person(2, mock);
-                Assert.IsNotNull(p.HomeAddress.Line1);
+                Assert.AreEqual("shimmed",p.HomeAddress.Line1);
+                Assert.AreEqual("blah2",p.HomeAddress.Line2);
             }
         }
 
@@ -31,9 +32,13 @@ namespace FakesTutorialTest
         {
             using (ShimsContext.Create())
             {
-                Address address = new ShimAddress() {Line1Get = () => { return "shimmed"; }};
-                Address addr = new ShimAddress().Instance;
-                Assert.IsNull(addr.Line1);
+                Address address = new ShimAddress()
+                {
+                    Line1Get = () => { return "shimmed"; },
+                    Line2Get = () => { return "shimmed2"; },
+                    CalculatePostage = () => { return 7.5; }
+                };
+                Assert.AreEqual(7.5,address.CalculatePostage());
             }
         }
     }

@@ -22,6 +22,9 @@
         <member name="P:FakesTutorialLib.Fakes.ShimAddress.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
         </member>
+        <member name="P:FakesTutorialLib.Fakes.ShimAddress.CalculatePostage">
+            <summary>Sets the shim of Address.CalculatePostage()</summary>
+        </member>
         <member name="P:FakesTutorialLib.Fakes.ShimAddress.Constructor">
             <summary>Sets the shim of Address.Address()</summary>
         </member>
@@ -39,6 +42,9 @@
         </member>
         <member name="T:FakesTutorialLib.Fakes.ShimAddress.AllInstances">
             <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FakesTutorialLib.Fakes.ShimAddress.AllInstances.CalculatePostage">
+            <summary>Sets the shim of Address.CalculatePostage()</summary>
         </member>
         <member name="P:FakesTutorialLib.Fakes.ShimAddress.AllInstances.Line1Get">
             <summary>Sets the shim of Address.get_Line1()</summary>
